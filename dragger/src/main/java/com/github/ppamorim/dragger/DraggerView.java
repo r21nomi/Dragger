@@ -107,14 +107,15 @@ public class DraggerView extends FrameLayout {
    */
   @Override protected void onAttachedToWindow() {
     super.onAttachedToWindow();
-    getSpring().addListener(springListener);
+    // Disable spring effect temporary.
+//    getSpring().addListener(springListener);
   }
 
   /**
    * Remove the spring listener when the view  is detached.
    */
   @Override protected void onDetachedFromWindow() {
-    getSpring().removeListener(springListener);
+//    getSpring().removeListener(springListener);
     super.onDetachedFromWindow();
   }
 
